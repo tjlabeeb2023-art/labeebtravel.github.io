@@ -1,89 +1,115 @@
+  <img src="logo.png" alt="Labeeb Travel Logo" class="logo">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Labeeb Travel & Tours Limited</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Labeeb Travel & Tours Limited</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8f6;
+  color: #333;
+}
 
-    header {
-      text-align: center;
-      padding-bottom: 20px;
-    }
+header {
+  background: linear-gradient(135deg, #0f9d58, #25D366);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #006400;
-      font-weight: bold;
-    }
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
 
-    /* WhatsApp Floating Button */
-    .wa-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    /* WhatsApp Menu */
-    .wa-menu {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      background: #fff;
-      border-radius: 10px;
-      width: 230px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      display: none;
-      z-index: 999;
-    }
+.container {
+  padding: 20px;
+}
 
-    .wa-menu a {
-      display: block;
-      padding: 12px;
-      color: #000;
-      text-decoration: none;
-      border-bottom: 1px solid #eee;
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
 
-    .wa-menu a:hover {
-      background: #f5f5f5;
-    }
+.apply-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #25D366, #0f9d58);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+.apply-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* WhatsApp */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wa-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: white;
+  width: 230px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.wa-menu a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+.wa-menu a:hover {
+  background: #f2f2f2;
+}
+</style>
 </head>
 
 <body>
 
 <header>
+  <!-- ✏️ LOGO FILE NAME HERE -->
+  <img src="logo.png" class="logo" alt="Teejay Travel Logo">
   <h1>Labeeb Travel & Tours Limited</h1>
-  <p>Travel • Booking • Internship • Training</p>
-
+  <p>Visa and Accomodation• Flight Booking • Tourism • E.T.C</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -92,20 +118,26 @@
   </nav>
 </header>
 
-<hr>
+<div class="container">
 
-<h2>Welcome</h2>
-<p>
-We Provide Reliable Travel Services, Visa and Accomodation Assistance Flight Booking,Importation Exportation across Nigeria.
-</p>
+  <div class="card">
+    <h2>WELCOME</h2>
+    <p>
+      We Provide Reliable Travel services Such as 
+      1. Visa and Accomodation, 
+      2. Booking assistance,
+      3. Decomentation, 
+      4. Importation and Exportation across Nigeria
+      E.T.C
+    </p>
 
-<p>
-Click the WhatsApp button below to chat with the right department instantly.
-</p>
+    <a href="form.html" class="apply-btn">📝 Apply / Book Now</a>
+  </div>
 
-<!-- WhatsApp Menu -->
+</div>
+
+<!-- WhatsApp -->
 <div class="wa-menu" id="waMenu">
-  <!-- ✏️ EDIT NUMBERS & TITLES HERE -->
   <a href="https://wa.me/2348093645195" target="_blank">
     👤 Admin – General Enquiries
   </a>
@@ -120,19 +152,14 @@ Click the WhatsApp button below to chat with the right department instantly.
   </a>
 </div>
 
-<!-- WhatsApp Floating Icon -->
 <div class="wa-float" onclick="toggleWA()">💬</div>
 
 <script>
-  function toggleWA() {
-    const menu = document.getElementById("waMenu");
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-  }
+function toggleWA() {
+  const menu = document.getElementById("waMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
 </script>
-
-<footer>
-  ©️ 2023 Labeeb Travel & Tours Limited
-</footer>
 
 </body>
 </html>
