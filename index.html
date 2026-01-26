@@ -4,59 +4,76 @@
   <meta charset="UTF-8">
   <title>Labeeb Travel & Tours Limited</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
-    header {
-      background: #003366;
-      color: white;
+      margin: 0;
       padding: 20px;
-      text-align: center;
+      line-height: 1.6;
     }
-    nav {
-      background: #00509e;
-      padding: 10px;
+
+    header {
       text-align: center;
+      padding-bottom: 20px;
     }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
+      color: #006400;
       font-weight: bold;
     }
-    .container {
-      padding: 30px;
-      text-align: center;
-    }
-    .btn {
-      background: #28a745;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    .whatsapp {
+
+    /* WhatsApp Floating Button */
+    .wa-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
+      width: 60px;
+      height: 60px;
       background: #25D366;
-      color: white;
-      padding: 15px;
+      color: #fff;
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    /* WhatsApp Menu */
+    .wa-menu {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 230px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 999;
+    }
+
+    .wa-menu a {
+      display: block;
+      padding: 12px;
+      color: #000;
       text-decoration: none;
-      font-size: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .wa-menu a:hover {
+      background: #f5f5f5;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -65,32 +82,56 @@
 
 <header>
   <h1>Labeeb Travel & Tours Limited</h1>
-  <p>Travel • Tours • Bookings • Internship Support</p>
+  <p>Travel • Booking • Internship • Training</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="form.html">Apply / Book</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<hr>
 
-<div class="container">
-  <h2>Welcome</h2>
-  <p>
-    We provide reliable travel services, flight bookings, tour arrangements,
-    and official internship placement support.
-  </p>
+<h2>Welcome</h2>
+<p>
+We Provide Reliable Travel Services, Visa and Accomodation Assistance Flight Booking,Importation Exportation across Nigeria.
+</p>
 
-  <a class="btn" href="form.html">Apply / Book Now</a>
+<p>
+Click the WhatsApp button below to chat with the right department instantly.
+</p>
+
+<!-- WhatsApp Menu -->
+<div class="wa-menu" id="waMenu">
+  <!-- ✏️ EDIT NUMBERS & TITLES HERE -->
+  <a href="https://wa.me/2348093645195" target="_blank">
+    👤 Admin – General Enquiries
+  </a>
+  <a href="https://wa.me/2349063355335" target="_blank">
+    📘 Booking Officer Kano City
+  </a>
+  <a href="https://wa.me/2348000000003" target="_blank">
+    📘 Booking Officer Abuja City
+     </a>
+  <a href="https://wa.me/2349131112423" target="_blank">
+    🛂 Visa Officer
+  </a>
 </div>
 
-<a class="whatsapp" href="https://wa.me/2349063355335" target="_blank">💬</a>
-  <a class="whatsapp" href="https://wa.me/2349093645195" target="_blank">💬</a>
-  <a class="whatsapp" href="https://wa.me/2348039152127" target="_blank">💬</a>
-  <a class="whatsapp" href="https://wa.me/2349131112423" target="_blank">💬</a>
+<!-- WhatsApp Floating Icon -->
+<div class="wa-float" onclick="toggleWA()">💬</div>
+
+<script>
+  function toggleWA() {
+    const menu = document.getElementById("waMenu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+</script>
 
 <footer>
-  ©️ 2026 Labeeb Travel & Tours Ltd
+  ©️ 2023 Labeeb Travel & Tours Limited
 </footer>
 
 </body>
