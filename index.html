@@ -1,28 +1,28 @@
-  <img src="logo.png" alt="Labeeb Travel Logo" class="logo">
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>LABEEB TRAVEL AND TOURS LIMITED COMPONY WEBSITE</title>
+<title>LABEEB TRAVEL & TOURS LIMITED</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f8f6;
+  background: #f4f7f6;
   color: #333;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(135deg, #0f9d58, #25D366);
   color: white;
-  padding: 20px;
+  padding: 35px 15px;
   text-align: center;
 }
 
 .logo {
-  width: 90px;
+  width: 120px;
   margin-bottom: 10px;
 }
 
@@ -33,72 +33,91 @@ nav a {
   font-weight: bold;
 }
 
+/* LAYOUT */
 .container {
+  max-width: 1100px;
+  margin: auto;
   padding: 20px;
 }
 
+.center {
+  text-align: center;
+}
+
+/* CARDS */
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
 
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* APPLY BUTTON */
 .apply-btn {
   display: inline-block;
-  padding: 15px 30px;
+  margin-top: 30px;
+  padding: 18px 45px;
   background: linear-gradient(135deg, #25D366, #0f9d58);
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 30px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 19px;
+  border-radius: 40px;
+  transition: 0.3s;
 }
 
 .apply-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
-/* WhatsApp */
-.wa-float {
+/* LISTS */
+ul {
+  line-height: 2.2;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-main {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
   color: white;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 50%;
+  padding: 18px;
+  font-size: 22px;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
 
-.wa-menu {
+/* WHATSAPP OPTIONS */
+.whatsapp-options {
   position: fixed;
-  bottom: 90px;
+  bottom: 85px;
   right: 20px;
   background: white;
-  width: 230px;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+  padding: 15px;
   display: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
 
-.wa-menu a {
+.whatsapp-options a {
   display: block;
-  padding: 12px;
+  margin: 10px 0;
+  color: #25D366;
+  font-weight: bold;
   text-decoration: none;
-  color: #000;
-  border-bottom: 1px solid #eee;
-}
-
-.wa-menu a:hover {
-  background: #f2f2f2;
 }
 </style>
 </head>
@@ -106,46 +125,76 @@ nav a {
 <body>
 
 <header>
-  <!-- ✏️ LOGO FILE NAME HERE -->
-  <img src="logo.png" class="logo" alt="Teejay Travel Logo">
-  <h1>Labeeb Travel & Tours Limited</h1>
-  <p>Visa and Accomodation• Flight Booking • Tourism • E.T.C</p>
+  <img src="logo2.png" class="logo" alt="Teejay Travel Logo">
+  <h1>LABEEB TRAVEL & TOURS LIMITED</h1>
+  <p>TRAVEL • BOOKINGS • VISA • LOGISTICS</p>
+
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="form.html">Apply / Book</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html">HOME</a>
+    <a href="form.html">APPLY / BOOK</a>
+    <a href="contact.html">CONTACT</a>
   </nav>
 </header>
 
 <div class="container">
 
-  <div class="card">
+  <!-- WELCOME -->
+  <div class="card center">
     <h2>WELCOME</h2>
     <p>
-      We Provide Reliable Travel services Such as 
-      1. Visa and Accomodation, 
-      2. Booking assistance,
-      3. Decomentation, 
-      4. Importation and Exportation across Nigeria
-      E.T.C
+      HAJJ & UMARAH PROCESSING<br>
+      TICKET ISSUANCE<br>
+      CARGO SERVICES<br>
+      VISA PROCESSING<br>
+      ACCOMMODATION & RESERVATIONS<br>
+      IMPORTATION & EXPORTATION SERVICES
     </p>
 
-    <a href="Google form link
-https://form.html" class="apply-btn">📝 Apply / Book Now</a>
+    <a href="form.html" class="apply-btn">📝 APPLY / BOOK NOW</a>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="card">
+    <h2>OUR SERVICES</h2>
+    <ul>
+      <li>Hajj & Umarah Processing</li>
+      <li>Ticket Issuance</li>
+      <li>Car / Cargo Services</li>
+      <li>Visa Processing</li>
+      <li>Accommodation & Reservations</li>
+      <li>Importation & Exportation</li>
+    </ul>
+  </div>
+
+  <!-- DESTINATIONS -->
+  <div class="card">
+    <h2>DESTINATIONS</h2>
+    <ul>
+      <li>Saudi Arabia</li>
+      <li>Dubai</li>
+      <li>Singapore</li>
+      <li>Turkey</li>
+      <li>China</li>
+      <li>America</li>
+      <li>Europe</li>
+      <li>Indonesia</li>
+      <li>Thailand</li>
+      <li>Australia</li>
+      <li>South Korea</li>
+    </ul>
   </div>
 
 </div>
 
-<!-- WhatsApp -->
-<div class="wa-menu" id="waMenu">
-  <a href="https://wa.me/2348093645195" target="_blank">
+<!-- WHATSAPP OPTIONS -->
+<div class="whatsapp-options" id="waOptions">
+ <a href="https://wa.me/2348093645195" target="_blank">
     👤 Admin – General Enquiries
   </a>
   <a href="https://wa.me/2349063355335" target="_blank">
     📘 Booking Officer Kano City
   </a>
-  <a href="https://wa.me/2348000000003" target="_blank">
+  <a href="https://wa.me/2348039152127" target="_blank">
     📘 Booking Officer Abuja City
      </a>
   <a href="https://wa.me/2349131112423" target="_blank">
@@ -153,13 +202,25 @@ https://form.html" class="apply-btn">📝 Apply / Book Now</a>
   </a>
 </div>
 
-<div class="wa-float" onclick="toggleWA()">💬</div>
+<!-- WHATSAPP BUTTON -->
+<div class="whatsapp-main" onclick="toggleWhatsApp()">💬</div>
 
 <script>
-function toggleWA() {
-  const menu = document.getElementById("waMenu");
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
+function toggleWhatsApp() {
+  const box = document.getElementById("waOptions");
+  box.style.display = box.style.display === "block" ? "none" : "block";
 }
+
+/* ANIMATION ON SCROLL */
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+});
 </script>
 
 </body>
