@@ -1,4 +1,4 @@
-<img src="logo.jpeg" alt="Labeeb Travel Logo" class="logo">
+<img src="logo.jpeg" class="logo home-logo" alt="Labeeb Travel Logo">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,10 +37,19 @@ header {
   text-align: center;
 }
 
-.logo {
+.home-logo {
   width:150px;
   margin-bottom: 10px;
 }
+  .home1-logo {
+    width: 130px;
+    margin-bottom:10px
+  }
+    .form-logo {
+    width: 130px;
+    margin-bottom:10px
+  }
+
 
 nav a {
   color: white;
@@ -120,17 +129,18 @@ ul {
 
 /* FLOATING WHATSAPP */
 .whatsapp-main {
+  left: auto
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;     /* NOT completely down */
+  right: 25px;      /* Bottom-right corner */
   background: #25D366;
   color: white;
   border-radius: 50%;
-  padding: 18px;
-  font-size: 22px;
+  padding: 22px 24px;
+  font-size: 28px;  /* ICON SIZE */
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  z-index: 9999;
 }
 
 /* WHATSAPP OPTIONS */
@@ -159,7 +169,7 @@ ul {
 <body>
 
 <header>
- <img src="logo.jpeg" alt="Labeeb Travel Logo" class="logo">
+ <img src="logo.jpeg" class="logo home1-logo" alt="Labeeb Travel Logo">
   <h1>LABEEB TRAVEL & TOURS LIMITED</h1>
   <p>TRAVEL • BOOKINGS • VISA • LOGISTICS</p>
 
